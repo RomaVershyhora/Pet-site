@@ -266,3 +266,57 @@ button.btn:hover{
   margin-bottom:24px;
   color:#4E4C46;
 }
+
+/* service */
+.service{
+  background-image: url(images/background-yellow.png);
+  background-size: 100% auto;
+  background-repeat: repeat-x;
+  padding-bottom: 200px;
+}
+.services-inner{
+  padding-top:150px;
+}
+.services-inner h2{
+  text-align: center;
+  font-size:56px;
+  font-weight: bold;
+  font-weight: 900;
+  margin-bottom: 48px;
+}
+.services-items{
+  display:flex;
+  justify-content: space-between;
+  align-items: end;
+  gap:10px;
+}
+.service-item{
+  padding:47px 72px;
+  background-color: #FFFEFC;
+  border-radius: 8px;
+}
+.service-item img{
+  margin-bottom: 24px;
+}
+.service-item h4{
+  text-align: center;
+  color:var(--second-color);
+  font-size:22px;
+  font-weight:600;
+}
+.services-items a{
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.services-items a svg{
+  width:40px;
+  height:40px;
+}
+.services-items a{
+  color:var(--second-color);
+  text-decoration: none;
+  font-size:18px;
+}
