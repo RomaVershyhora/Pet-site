@@ -314,9 +314,12 @@ button.btn:hover{
 .services-items a svg{
   width:40px;
   height:40px;
+  fill:var(--second-color);
 }
 .services-items a{
   color:var(--second-color);
   text-decoration: none;
   font-size:18px;
 }
+
+/* customer */
