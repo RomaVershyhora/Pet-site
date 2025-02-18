@@ -323,3 +323,48 @@ button.btn:hover{
 }
 
 /* customer */
+.customer h2{
+  font-size:56px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.customer-inner{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customer-inner article{
+  height:456px;
+  padding:342px 43px 16px 43px;
+  border-radius: 24px;
+  
+}
+.customer-inner button.arrow-custom svg{
+  height:44px;
+  width:44px;
+}
+.customer-inner ul{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  align-items: center;
+}
+.customer-inner ul li{
+  display: flex;
+  justify-content: space-between;
+}
+.customer-people article:nth-child(1){
+  background-image: url("images/happy1.svg");
+  background-repeat: no-repeat;
+}
+.customer-svg{
+  display:flex;
+}
+.customer-svg div svg{
+  width:32px;
+  height:14px;
+}
+.customer-svg div{
+  display:flex;
+}
