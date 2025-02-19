@@ -124,6 +124,7 @@ ul{
 :root{
   --main-color:#181817;
   --second-color:#FF9F0E;
+  --siryi:#839AA9;
 }
 /* HEADER */
 .header-wrap{
@@ -329,42 +330,209 @@ button.btn:hover{
   text-align: center;
   margin-bottom: 48px;
 }
-.customer-inner{
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
+
+/* customer */
+.cust-cart{
+  position: relative;
 }
-.customer-inner article{
+.customer h2{
+  text-align:center;
+  margin-bottom: 48px;
+  font-size:56px;
+}
+.customer-cards{
+  margin-bottom:32px;
+}
+.customer-cards ul{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+}
+.customer-cards ul li article{
+  width:344px;
   height:456px;
-  padding:342px 43px 16px 43px;
-  border-radius: 24px;
-  
+  padding:342px 0px 16px 0px;
+  border-radius:24px;
 }
-.customer-inner button.arrow-custom svg{
-  height:44px;
-  width:44px;
+.customer-cards ul li:nth-child(1) article{
+  background-image: linear-gradient(to bottom, transparent 70%, #839AA9 70%), url("images/happy1.svg");
 }
-.customer-inner ul{
+.customer-cards ul li:nth-child(2) article{
+  background-image: linear-gradient(to bottom, transparent 70%, #839AA9 70%), url("images/happy2.svg");
+}
+.customer-cards ul li:nth-child(3) article{
+  background-image: linear-gradient(to bottom, transparent 70%, #839AA9 70%), url("images/happy3.svg");
+}
+.cust-cart h3{
+  text-align: center;
+  color:#fff;
+  margin-bottom: 8px;
+  font-size:24px;
+  font-weight:600;
+}
+.cust-cart p{
+  text-align: center;
+  color:#fff;
+  margin-bottom: 8px;
+  font-size:16px;
+  font-weight:400;
+  max-width:380px;
+}
+.kosti-p{
   display:flex;
-  justify-content:space-between;
-  gap:10px;
-  align-items: center;
-}
-.customer-inner ul li{
-  display: flex;
+  align-items:center;
   justify-content: space-between;
+  margin: 0 auto;
+  width:257px;
 }
-.customer-people article:nth-child(1){
-  background-image: url("images/happy1.svg");
+.kosti-p p{
+  font-size:16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color:var(--second-color);
+}
+.icon-el{
+  max-width:121px;
+  margin:0 auto;
+  display:flex;
+  gap:24px;
+}
+.icon-el svg{
+  height:11px;
+  width:11px;
+  fill:var(--siryi);
+}
+.icon-el svg:first-of-type{
+  height:11px;
+  width:11px;
+  fill:var(--second-color);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+/* Contact */
+
+button.btn {
+  background-color: #FFA500;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button.btn:hover {
+  background-color: #e69500;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #839AA9;
+  cursor: pointer;
+}
+.checkbox-label input {
+  display: none;
+}
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #839AA9;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+.checkbox-label input:checked + .custom-checkbox {
+  background-color: #839AA9;
+  border-color: #839AA9;
+}
+.checkbox-label input:checked + .custom-checkbox::after {
+  content: "✓";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact{
+  background-image: url(images/background-c.png );
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  margin-top:-130px;
+  margin-bottom: 92px;
 }
-.customer-svg{
-  display:flex;
+.contact h2{
+  text-align: center;
+  font-size:56px;
+  max-width: 605px;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
-.customer-svg div svg{
-  width:32px;
-  height:14px;
+.contact-inner{
+  padding-top:350px;
 }
-.customer-svg div{
-  display:flex;
+.contact-inner p.contactp{
+  text-align: center;
+  font-size: 18px;
+  color:var(--siryi);
+  margin-bottom: 42px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.contact-form form{
+  position:relative;
+}
+.contact-form form svg{
+  width:25px;
+  height:25px;
+  position:absolute;
+  top:7px;
+  left:10px;
+  fill:var(--second-color);
+}
+.contact-form form input{
+  padding:12px 50px;
+  border:1px var(--second-color) solid;
+  width:600px;
+  outline:none;
+  border-radius: 8px;
+  color:var(--second-color);
+  font-size:16px;
+}
+.contact-form form input::placeholder{
+  color:var(--second-color);
+  font-size:16px;
+  font-weight: 400;
+}
+.contact-form form input:placeholder-shown{
+  border-color: silver;
+}
+.contact-form form:last-of-type{
+  margin-bottom: 24px;
+}
+.dog-contact img{
+  position:absolute;
+}
+.dog-contact img:nth-child(1){
+  top:380px;
+  left:200px;
+}
+.dog-contact img:nth-child(2){
+  top:200px;
+  right:0;
 }
