@@ -536,3 +536,75 @@ button.btn {
   top:200px;
   right:0;
 }
+/* footer */
+.footer{
+  background-color:#FFFAF3;
+  position:relative;
+  margin-bottom: 50px;
+}
+.footer-wrap{
+  display:flex;
+  align-items:start;
+  gap:136px;
+  padding:32px 0;
+}
+.footer-item img{
+  margin-bottom: 24px;
+}
+.footer-item .footer-social-media{
+  display:flex;
+  gap:8px;
+}
+.footer-item .footer-social-media a svg{
+  width:40px;
+  height:40px;
+  fill:var(--second-color);
+}
+.footer-item ul{
+  display:grid;
+  gap:16px;
+}
+.footer-item ul li a{
+  font-size:18px;
+  display:inline-block;
+  color:var(--main-color);
+  text-decoration: none;
+  transition:color .4s ease;
+}
+.footer-item ul li a:hover{
+  color:var(--second-color);
+}
+.footer-item form{
+  position:relative;
+}
+.footer-item form input{
+  padding:8px 40px;
+  color:var(--second-color);
+  font-weight: 700;
+  border:1px var(--second-color) solid;
+  border-radius: 8px;
+  outline: none;
+  width:320px;
+}
+.footer-item form input:nth-child(1){
+  margin-bottom: 16px;
+}
+.footer-item form input::placeholder{
+  color:var(--second-color);
+}
+.footer-item form input:placeholder-shown{
+  color:var(--siryi);
+}
+.footer-item form svg{
+  width:24px;
+  height:24px;
+  position: absolute;
+  top:4px;
+  left:5px;
+  fill: var(--second-color);
+}
+.footer-wrap img.dog3{
+  position:absolute;
+  top:-30px;
+  right:260px;
+}
