@@ -342,6 +342,21 @@ button.btn:hover{
 }
 .customer-cards{
   margin-bottom:32px;
+  display:flex;
+  align-items:center;
+  gap:24px
+}
+.customer-cards button{
+  width:44px;
+  height:44px;
+  background-color: transparent;
+  border:none;
+}
+.customer-cards svg{
+  width:44px;
+  height:44px;
+  fill:#839AA9;
+  flex-shrink: 0;
 }
 .customer-cards ul{
   display:flex;
