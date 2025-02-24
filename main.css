@@ -688,3 +688,69 @@ button.btn {
   font-weight: 400;
   margin-bottom: 42px;
 }
+
+/* Customer landing */
+.nutrition{
+  margin-top: 72px;
+}
+.sorting-wrap{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;
+}
+.sorting-wrap h1{
+  font-size:56px;
+  font-weight: 900;
+  color:var(--second-color);
+}
+.sorting{
+  display:flex;
+  align-items: center;
+  gap:16px;
+}
+.sorting p{
+  color:var(--second-color);
+}
+.sort-buttons{
+  display:flex;
+  align-items: center;
+  border:1px var(--siryi) solid;
+  border-radius:8px;
+}
+.sort-buttons button{
+  padding:8px;
+  font-size:16px;
+  border:none;
+  background-color: transparent;
+  font-weight: 700;
+  cursor:pointer;
+}
+.sort-buttons button.active:first-of-type{
+  background-color: var(--second-color);
+  padding:8px;
+  font-size:16px;
+  border:none;
+  color:#fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.sort-buttons button.active:last-of-type{
+  background-color: var(--second-color);
+  padding:8px;
+  font-size:16px;
+  border:none;
+  color:#fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.sort-buttons button.active{
+  background-color: var(--second-color);
+  padding:8px;
+  font-size:16px;
+  border:none;
+  color:#fff;
+}
+.sort-buttons button:not(:last-of-type){
+  border-right:1px var(--siryi) solid;;
+}
