@@ -608,3 +608,68 @@ button.btn {
   top:-30px;
   right:260px;
 }
+
+/* modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width:880px;
+  height:880px;
+  background: #FFFAF3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal {
+  position: relative;
+}
+
+.modal-btn-close {
+  position: absolute;
+  background-color: transparent;
+  border:none;
+  top: 40px;
+  right: 50px;
+}
+.contact-modal{
+  padding:142px 90px;
+}
+.contact-modal h2{
+  text-align:center;
+  max-width: 700px;
+  margin:0 auto;
+  font-size: 56px;
+  line-height:69px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.contact-modal p.contactp{
+  text-align:center;
+  max-width: 700px;
+  margin:0 auto;
+  color:var(--siryi);
+  font-size: 18px;
+  line-height:24px;
+  font-weight: 400;
+  margin-bottom: 42px;
+}
