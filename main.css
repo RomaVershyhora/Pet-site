@@ -106,6 +106,7 @@ html,body{
     font-size:18px;
     font-weight:400;
     color:var(--main-color);
+    scroll-behavior: smooth;
     background-image: url(images/background.png);
 }
 p,h1,h2,h3,h4,h5,h6,a,ul,li{
