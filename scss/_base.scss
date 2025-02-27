@@ -1,0 +1,32 @@
+/* Base settenings */
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+    font-family: "Roboto" , sans-serif;
+    font-size:18px;
+    font-weight:400;
+    color:var(--main-color);
+    scroll-behavior: smooth;
+    background-image: url(images/background.png);
+}
+p,h1,h2,h3,h4,h5,h6,a,ul,li{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+.conteiner{
+    max-width:calc(100% - 40px);
+    padding:0 20px;
+    width:1225px;
+    margin: 0 auto;
+}
+:root{
+  --main-color:#181817;
+  --second-color:#FF9F0E;
+  --siryi:#839AA9;
+}
