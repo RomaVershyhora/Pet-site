@@ -567,6 +567,7 @@ button.btn {
 }
 
 /* Customer landing */
+
 .nutrition{
   margin-top: 72px;
   margin-bottom: 72px;
@@ -631,4 +632,87 @@ button.btn {
 }
 .sort-buttons button:not(:last-of-type){
   border-right:1px var(--siryi) solid;;
-}  
+}
+// products
+.products-eat{
+  margin-bottom: 70px;
+}
+.product-wrap{
+  display:flex;
+  gap:40px 32px;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.product-item{
+  width: calc((100% - (32px * 4)) / 4);
+}
+.product-item img{
+  display:block;
+  margin:0 auto;
+  margin-bottom: 8px;
+}
+.eat-rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:5px;
+  margin-bottom: 16px;
+}
+.eat-rating p{
+  font-size:14px;
+  color:var(--siryi);
+}
+.eat-rating img{
+  padding:0;
+  margin:0;
+}
+.product-item p.product-txt{
+  text-align: center;
+  max-width:256px;
+  margin:0 auto;
+  margin-bottom: 24px;
+}
+.product-price{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.product-price p:first-of-type{
+  color:#181817;
+  font-weight: 600;
+  font-size: 18px;
+}
+.product-price p:last-of-type{
+  color:var(--siryi);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.product-item button{
+  display:block;
+  margin:0 auto;
+  padding:14px 30px;
+  border:2px var(--second-color) solid;
+  background-color: var(--second-color);
+  border-radius:8px;
+  font-size:18px;
+  font-weight: 500;
+  color:#fff;
+  transition: border .4s ease, background-color .4s ease, color .4s ease;
+}
+.product-item button:hover{
+  border:2px var(--second-color) solid;
+  background-color: #fff;
+  color:#000;
+}
+.product-item{
+  padding:24px 16px;
+  background-color: #fff;
+  border-radius:8px;
+  transition: box-shadow .4s ease;
+}
+.product-item:hover{
+  box-shadow: 0 8px 16px 0 rgba(24, 24, 23, 0.08);
+}
